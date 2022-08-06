@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise 16 : Conversion Calculator</title>
+</head>
+<body>
+    
+
+
+<div class="container container1">
+
+    <h1 class="text-center">Unit Converter</h1>
+
+    <div class="row row1">
+
+        <label>
+            <h3>Select Measurement</h3>
+        </label>
+        
+        <select onchange="location = this.options[this.selectedIndex].value;" class="form-select form-select-lg" aria-label=".form-select-lg example">
+            
+            <option value="index.html">Length</option>
+            <option value="index1.html">Volume</option>
+            <option value="index2.html" selected>Mass</option>
+
+        </select>
+
+    </div>
+    
+    <div class="row align-items-center row2">
+
+        <div class="col-md-5 col2a">
+
+            <label for="">
+                Type Desired Value 
+            </label>
+            
+            <input type="number" class="form-control" name="gram" placeholder="Gram">
+            
+        </div>
+
+        <div class="col-md-2 col2b">
+            
+            <h1 class="text-center">=</h1>
+            
+        </div>
+
+        <div class="col-md-5 col2c">
+
+            <label for="">
+                The Converted Value is : 
+            </label>
+            
+            <input type="number" class="form-control" name="output" disabled>
+            
+        </div>
+
+    </div>
+
+    <div class="row align-items-center row3">
+        
+        <div class="col-md-4">
+            <button class="btn" onclick="kilogram()">Convert to Kilograms</button>
+        </div>
+
+        <div class="col-md-4">
+            <button class="btn" onclick="pound()">Convert to Pounds</button>
+        </div>
+
+        <div class="col-md-4">
+            <button class="btn" onclick="ton()">Convert to Tons</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<script src="main.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+</html>
